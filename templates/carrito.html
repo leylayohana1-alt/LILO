@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrito</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<h1>🛒 Carrito</h1>
+
+{% for producto in carrito %}
+<p>
+    {{ producto.nombre }} -
+    S/. {{ producto.precio }}
+</p>
+{% endfor %}
+
+<h3>Total: S/. {{ total }}</h3>
+
+<a href="/vaciar">Vaciar carrito</a>
+
+<br><br>
+
+<a href="/menu">Volver</a>
+
+</body>
+</html>

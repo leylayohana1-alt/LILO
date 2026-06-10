@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bebidas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<h1>☕ Bebidas</h1>
+
+{% for producto in productos %}
+
+<div style="border:1px solid #ccc;padding:15px;margin:15px;">
+
+    <img src="{{ producto.imagen }}"
+         width="250">
+
+    <h3>{{ producto.nombre }}</h3>
+
+    <p>S/. {{ producto.precio }}</p>
+
+    <a href="/agregar?nombre={{ producto.nombre }}&precio={{ producto.precio }}">
+        Agregar al carrito
+    </a>
+
+</div>
+
+{% endfor %}
+
+<a href="/menu">Volver</a>
+
+</body>
+</html>

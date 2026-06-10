@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Bal Dulce Edén</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/estilos.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🍰 Bal Dulce Edén
+</div>
+
+<nav>
+<a href="/">Inicio</a>
+<a href="/menu">Menú</a>
+<a href="/contacto">Contacto</a>
+</nav>
+
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Los pasteles más deliciosos 🍓</h1>
+        <p>Endulzamos tus momentos especiales</p>
+        <a href="/menu" class="btn-menu">Ver menú</a>
+    </div>
+</section>
+    <!-- SECCIÓN DE NUESTROS PRODUCTOS -->
+<section class="productos-section">
+    <h2>Nuestros Productos</h2>
+    
+    <div class="productos-container">
+        <!-- Tarjeta 1: Torta -->
+        <div class="producto-card">
+            <img src="https://images.pexels.com/photos/34802628/pexels-photo-34802628.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Pastel de Chocolate">
+            <div class="producto-info">
+                <h3>Pastel de Chocolate</h3>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2: Cheesecake -->
+        <div class="producto-card">
+            <img src="https://images.pexels.com/photos/4686821/pexels-photo-4686821.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cheesecake de Fresa">
+            <div class="producto-info">
+                <h3>Cheesecake de Fresa</h3>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3: Cupcakes -->
+        <div class="producto-card">
+            <img src="https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cupcakes Gourmet">
+            <div class="producto-info">
+                <h3>Cupcakes Gourmet</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PIE DE PÁGINA (FOOTER) ROSITA -->
+<footer class="main-footer">
+    <p>&copy; 2026 Bal Dulce Edén 🍰</p>
+</footer>
